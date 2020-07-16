@@ -258,7 +258,7 @@ func validate(ips, hostnames []string) {
 }
 
 func main() {
-	defer elapsed("TEST Servers")()
+	defer elapsed("Testing Server Connections")()
 
 	// read ip.txt
 	ips, err := readLines("ip.txt")
