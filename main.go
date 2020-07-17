@@ -16,7 +16,7 @@ func main() {
 	// validate arguments
 	if len(os.Args[1:]) != 2 {
 		log.Fatalf(`Please provide IP and Hostnames paths only
-			ex. [program].exe 'ip_list.txt' 'hostname_list.txt'
+			ex. [program].exe 'ip_list.txt'(IP) 'hostname_list.txt'(HOSTNAMES) respectively
 			
 			[1]st argument will be fed to test
 			[2]nd argument will be as label`)
