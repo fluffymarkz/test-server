@@ -32,7 +32,8 @@ func main() {
 	// read hostname.txt
 	hostnames := util.ReadLines(strings.TrimSpace(arg2))
 
-	fmt.Print("validating records...\n\n[logs]\n")
+	fmt.Print("validating records...\n\n")
+	fmt.Print("[PING] - ping [HTTP GET] - port 80 [HTTPS GET] - port 443 [Dial Timeout] - port 80\n\n[logs]\n")
 	// validate records
 	validate.Validate(ips, hostnames)
 
