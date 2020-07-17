@@ -132,6 +132,7 @@ func testConnection(ips []string, hostnames []string) {
 	close(chanAlive)
 	close(chanDead)
 	close(chanPingFail)
+	close(chanDialTimeout)
 
 	fmt.Println("\n\n========== TEST REPORT (by IP) ==========")
 	aliveCnt := len(chanAlive)
